@@ -69,16 +69,12 @@ export default () => {
       description: "We create and manage ads that you need, from creation to deployment. Lorem ipsum donor sit amet consicou."
     },
     { imageSrc: SupportIconImage, title: "Video Marketing" },
-    { imageSrc: CustomizeIconImage, title: "Customer Relation" },
-    { imageSrc: ReliableIconImage, title: "Product Outreach" },
-    { imageSrc: FastIconImage, title: "PR Campaign" },
-    { imageSrc: SimpleIconImage, title: "Product Expansion" }
   ];
 
   return (
     <Container>
       <ThreeColumnContainer>
-        <Heading>Our Professional <span tw="text-primary-500">Services</span></Heading>
+        <Heading>我々アプリの<span tw="text-primary-500">メリット</span></Heading>
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>

@@ -83,12 +83,6 @@ export default ({
             <Paragraph>{description}</Paragraph>
             <Actions>
               <PrimaryButton as="a" href={primaryButtonUrl}>{primaryButtonText}</PrimaryButton>
-              <WatchVideoButton onClick={toggleModal}>
-                <span className="playIconContainer">
-                  <PlayIcon className="playIcon" />
-                </span>
-                <span className="playText">{watchVideoButtonText}</span>
-              </WatchVideoButton>
             </Actions>
           </LeftColumn>
           <RightColumn>
@@ -103,20 +97,6 @@ export default ({
           </RightColumn>
         </TwoColumn>
         <DecoratorBlob1 />
-        <StyledModal
-          closeTimeoutMS={300}
-          className="mainHeroModal"
-          isOpen={modalIsOpen}
-          onRequestClose={toggleModal}
-          shouldCloseOnOverlayClick={true}
-        >
-          <CloseModalButton onClick={toggleModal}>
-            <CloseIcon tw="w-6 h-6" />
-          </CloseModalButton>
-          <div className="content">
-            <ResponsiveVideoEmbed url={watchVideoYoutubeUrl} tw="w-full" />
-          </div>
-        </StyledModal>
       </Container>
     </>
   );
